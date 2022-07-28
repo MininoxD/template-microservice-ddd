@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test:features": "cucumber-js -p backend"
+    "test:unit": "jest",
+    "test:features": "cucumber-js -p backend",
+    "dev":"ts-node-dev --respawn --transpile-only src/app/start"
   },
   "keywords": [],
   "author": "",

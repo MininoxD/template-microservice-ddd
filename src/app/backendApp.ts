@@ -6,6 +6,7 @@ export class BackendApp {
   async start() {
     const port = process.env.PORT || '5000'
     this.server = new Server(port)
+    console.log(`Server listening on port ${port}`)
     return this.server.listen()
   }
 

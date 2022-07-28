@@ -1,5 +1,5 @@
 import { Router } from 'express'
-import { HealthCheckController } from '../controllers/healthCheck'
+import { HealthCheckController } from '../controllers/healthCheckGet'
 import container from '../dependency-injection'
 
 export const register = (router: Router) => {

@@ -1,30 +1,30 @@
 interface Product {
-  id: number
+  id: string
   component: string
 }
 interface Profile {
-  customer_id: number
-  subscriber_id: number
+  customer_id: string
+  subscriber_id: string
 }
 export class Discount {
   readonly code: string
   readonly name: string
-  readonly status: 'ABIERTO' | 'CERRADO'
-  readonly start_date: Date
-  readonly end_date: Date
-  readonly billing_id: number
-  readonly ap_id: number
+  readonly status: 'Abierto' | 'Cerrado'
+  readonly start_date: string
+  readonly end_date: string
+  readonly billing_id: string
+  readonly ap_id: string
   readonly profile: Profile
   readonly product: Product
 
   constructor(
     code: string,
     name: string,
-    status: 'ABIERTO' | 'CERRADO',
-    start_date: Date,
-    end_date: Date,
-    billing_id: number,
-    ap_id: number,
+    status: 'Abierto' | 'Cerrado',
+    start_date: string,
+    end_date: string,
+    billing_id: string,
+    ap_id: string,
     profile: Profile,
     products: Product
   ) {
